@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>inserer Emprunt</title>
+<link href="../css/bootstrap.css" rel="stylesheet">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/57b929fbcb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<body>
+  <nav class="navbarbib">
+        
+  </nav>
+
+    <br><br>
+<div class="container">
+    <div class="panel panel-success">
+        <div class=" panel panel-heading"><h1 class="center">Ajouter un Emprunt</h1></div>
+<div class="panel-body">
+<form id ="form"  method="POST">
+  <div class="form-group row">
+    <label for="adherent" class="col-sm-2 col-form-label">Adherent</label>
+    <div class="col-sm-6">
+      <!-- <input required type="text"  name="adherent"  class="form-control" id="adherent" placeholder="Adherent"> -->
+      <select  class="form-control" id="adherents" name="adherents" >
+        <option value="adherent">  --------Selectionner adherent--------</option>
+       
+      </select>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="document" class="col-sm-2 col-form-label">Document</label>
+    <div class="col-sm-6">
+      <select  class="form-control" id="documents" name="documents">
+       
+            <option  value="livres"> --------Selectionner document--------</option>
+
+      </select>
+
+      
+      <!-- <ul>
+        <li class="dropdownC  form-control"><a class="dropbtnC " >-----------Selectionner document---------</a>
+          <ul class="dropdownC-content">
+              <ul>
+                <li class="dropdownC  form-control"><a class="dropdown-item" href="#">Livres <i class="fa fa-angle-right"></i></a>
+                  <div class="sub-menu-2" >
+                    <ul>
+                      <li><a class="dropdown-item">Java</a></li>
+                      <li><a class="dropdown-item">Python</a></li>
+                      <li><a class="dropdown-item">C++</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+                <li><a class="dropdown-item" href="#">Revue</a></li>
+                <li><a class="dropdown-item" href="#">Dictionnaire</a></li>
+          </ul>
+        </li>
+      </ul> -->
+
+      
+    </div> 
+  </div>
+  <div class="form-group row">
+    <label for="dateEmprunt" class="col-sm-2 col-form-label">Date Emprunt</label>
+    <div class="col-sm-6">
+      <input required type="date" name="dateEmprunt" class="form-control" id="dateEmprunt" placeholder="Date Emprunt">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="dateRoteur" class="col-sm-2 col-form-label">Date Roteur</label>
+    <div class="col-sm-6">
+      <input required type="date" name="dateRoteur" class="form-control" id="dateRoteur"  placeholder="Date Roteur">
+    </div>
+  </div>
+  <input value="Creer" type="submit" class="btn btn-danger mb-2">
+</form>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="js/listerAdherentAndDocument.js"></script>
+<script type="text/javascript" src="../script.js"></script>
+</body>
+</html>
+
+<style>
+
+.dropbtnC {
+  background-color: rgb(255, 255, 255);
+  color: rgb(15, 14, 14);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdownC  {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownC-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdownC-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdownC-content a:hover {background-color: #44e482}
+
+.dropdownC:hover .dropdownC-content {
+  display: block;
+}
+
+.dropdownC:hover .dropbtnC {
+  background-color: #ffffff;
+}
+
+.sub-menu-2{
+   display: none;
+  /* position: absolute;
+  background-color: #44e482;
+  margin-top: 15px;
+  margin-left: -15px; */
+} 
+.fa-angle-right{
+  float: right;
+}
+.dropdownC:hover .sub-menu-2{
+  position: absolute;
+  display: inline-block;
+  margin-top: -40px;
+  margin-left: 140px;
+  background:#ffffff;
+}
+
+
+ </style>

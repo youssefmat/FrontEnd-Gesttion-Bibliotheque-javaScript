@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>listes des adherent</title>
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="../css/bootstrap.css" rel="stylesheet">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/57b929fbcb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+<body>
+	<nav class="navbarbib">
+        
+    </nav>
+	
+	
+	<div class="container">
+	  
+	  <br>
+       <br>
+		<div class="panel panel-success">
+			<div class=" panel panel-heading"><h1 class="center">Liste des Adherents</h1></div>
+			<nav class="navbar navbar-light bg-light">
+				<a href="ajouterAdherent.html" class="btn bt-primary">Add New</a>
+				<form class="form-inline">
+				  <input required class="form-control mr-sm-2" id="search" type="text" placeholder="Search search by CIN " aria-label="Search">
+				  <button  class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				</form>
+			  </nav>
+			<table class="table">
+				<thead>
+				  <tr>
+					
+					<th  scope="col"> Prenom & Nom </th>
+					<th  scope="col">Addresse</th>
+					<th scope="col">CIN</th>
+					<th scope="col">date Naissance</th>
+				  </tr>
+				</thead>
+				<tbody id="tbody">
+				 
+				
+				</tbody>
+			  </table>
+			  
+			</div>
+            <div class="container" id="pagination">
+                <div id="pages" >
+                    <button  id="1" onclick="getId(this)" class="page btn btn-sm btn-info">1</button>
+                    <button  id="2" onclick="getId(this)"  class="page btn btn-sm btn-info">2</button>
+                    <button  id="3" onclick="getId(this)"  class="page btn btn-sm btn-info">3</button>
+                    <button  id="4" onclick="getId(this)"  class="page btn btn-sm btn-info">4</button>
+                    <button  id="5" onclick="getId(this)"  class="page btn btn-sm btn-info">5</button>
+                </div>
+            </div>
+		</div>
+        
+    </div>
+</div>
+    <script type="text/javascript" src="js/listeAdherents.js"> </script>
+		 <script type="text/javascript" src="../script.js"></script>
+</body>
+</html>

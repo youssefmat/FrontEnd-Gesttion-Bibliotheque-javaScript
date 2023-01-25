@@ -1,0 +1,97 @@
+<div class="logo"><i class="fas fa-meteor fa-2x"></i>Bibliothéque</div>
+        <ul class="menu">
+            <li><a href="/FrontendBiblio/index.html">Accueil</a></li>
+            <li class="dropdown"><a class="dropbtn" href="#">Documents</a>
+                <ul class="dropdown-content">
+                    <li><a class="dropdown-item" href="/FrontendBiblio/Documents/Livres/index.html">Livres</a></li>
+                    <li><a class="dropdown-item" href="/FrontendBiblio/Documents/Revues/index.html">Revue</a></li>
+                    <li><a class="dropdown-item" href="/FrontendBiblio/Documents/Dictionnaires/index.html">Dictionnaire</a></li>
+              </ul></li>
+            <li><a href="/FrontendBiblio/Adherents/index.html">Adherents</a></li>
+            <li><a href="/FrontendBiblio/Emprunts/index.html">Emprunts</a></li>
+        </ul>
+
+        <ul class="login-menu">
+            
+        </ul>
+
+        <style>
+            /* menu bar */
+            .dropbtn {
+  background-color: rgb(176, 185, 189);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbarbib{
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 3px rgb(202, 202, 202);
+    box-shadow: 2px 2px 35px 2px #ebebe4;
+    padding:12px 28px;
+    font-weight: 700;
+    font-size: larger;
+    align-items: center;
+    letter-spacing: 3px;
+}
+.navbarbib i{
+    color:#117f4b;
+}
+.navbarbib .menu, .navbar .login-menu{
+display: flex;
+}
+.navbarbib ul{
+    list-style: none;
+}
+
+.navbarbib .menu a, .navbar .login-menu li{
+  margin-right:38px;
+  text-decoration: none;  
+  color:rgb(5, 114, 60)
+}
+/* link */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #e9e6e6;
+}
+
+ </style>
+ <!-- <script>
+     const li = document.querySelectorAll('.menu li')[0]
+     li.addEventListener('click', (e)=>{
+         e.preventDefault()
+         alert('Home Clicked')
+         window.location.href='index.html'
+     })
+ </script> -->

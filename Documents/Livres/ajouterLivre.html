@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>inserer Livre</title>
+<link href="../../css/bootstrap.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/57b929fbcb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/57b929fbcb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../style.css">
+    
+</head>
+<body>
+<body>
+  <nav class="navbarbib">
+        
+  </nav>
+
+    <br><br>
+<div class="container">
+    <div class="panel panel-success">
+        <div class=" panel panel-heading"><h1 class="center">Ajouter un Livre</h1></div>
+<div class="panel-body">
+<form id ="form"  method="POST">
+  <div class="form-group row">
+    <label for="titre" class="col-sm-2 col-form-label">Titre</label>
+    <div class="col-sm-6">
+      <input required type="text"  name="titre"  class="form-control" id="titre" placeholder="Titre">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="auteur" class="col-sm-2 col-form-label">Auteur</label>
+    <div class="col-sm-6">
+      <input required type="text" name="auteur" class="form-control" id="auteur" placeholder="Auteur">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="nbPage" class="col-sm-2 col-form-label">Nb Pages</label>
+    <div class="col-sm-6">
+      <input required type="text" name="nbPage" class="form-control" id="nbPage" placeholder="Nombre de Pages">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="prix" class="col-sm-2 col-form-label">Prix</label>
+    <div class="col-sm-6">
+      <input required type="text" name="prix" class="form-control" id="prix"  placeholder="Prix" >
+    </div>
+  </div>
+  <input value="Creer" type="submit" class="btn btn-danger mb-2">
+</form>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="js/ajouterLivre.js"></script>
+<script type="text/javascript" src="../../script.js"></script>
+</body>
+</html>

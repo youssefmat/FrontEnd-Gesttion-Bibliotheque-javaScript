@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link href="../css/bootstrap.css" rel="stylesheet">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/57b929fbcb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+<body>
+<body>
+
+	<nav class="navbarbib">
+        
+  </nav>
+
+    <br><br>
+<div class="container">
+    <div class="panel panel-success">
+        <div class=" panel panel-heading"><h1 class="center">Modifier d'un Adherent</h1></div>
+<div class="panel-body">
+<form id ="form"  method="POST">
+  <div class="form-group row">
+    <label for="nom" class="col-sm-2 col-form-label">Prenom & Nom</label>
+    <div class="col-sm-6">
+      <input  type="text"  name="nom"  class="form-control" id="nom" placeholder="Prenom & Nom">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="addresse" class="col-sm-2 col-form-label">addresse</label>
+    <div class="col-sm-6">
+      <input  type="text" value="" name="addresse" class="form-control" id="addresse" placeholder="addresse">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="cin" class="col-sm-2 col-form-label">CIN</label>
+    <div class="col-sm-6">
+      <input  type="text" name="cin" class="form-control" id="cin" placeholder="CIN">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="date" class="col-sm-2 col-form-label">Date Naissance</label>
+    <div class="col-sm-6">
+      <input required type="date" name="date" value="30/2/2022" class="form-control" id="date" >
+    </div>
+  </div>
+  <input value="Modifier" type="submit" class="btn btn-danger mb-2">
+</form>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="js/modifierAdherent.js">
+</script>
+<script type="text/javascript" src="../script.js">
+</script>
+</body>
+</html>
